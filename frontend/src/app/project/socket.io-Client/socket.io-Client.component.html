@@ -1,0 +1,24 @@
+<h4>
+  socket.io-Client works!
+  <div class="mat-menu-panel">
+    <button mat-raised-button color="primary" (click)="Disconnect()">Disconnect</button>
+    <button mat-raised-button color="primary" (click)="Connect()">Connect</button>
+  </div>
+</h4>
+
+
+<mat-list class="chat-list">
+  <mat-card *ngFor="let message of messages">
+    <mat-card-header>
+      <mat-card-title>{{message.content}}</mat-card-title>
+      <mat-card-subtitle> {{message.date | date:'dd/MM/yyyy, h:mm:ss:ms  a'}} </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>from: {{message.from}}</p>
+    </mat-card-content>
+  </mat-card>
+</mat-list>
+
+
+
+

@@ -1,0 +1,34 @@
+{
+  "name": "WebSockets-example-backend",
+  "description": "Sending data through webSockets, Example of connecting WebSockets",
+  "keywords": [
+    "express",
+    "WebSockets",
+    "socket.io",
+    "winston",
+    "simple example",
+    "web sockets"
+  ],
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": {
+    "name": "Igor Snisar",
+    "email": "Snisar.online@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "install_backend": "npm install && npm run-script pro",
+    "pro": "cross-env NODE_ENV=production node ./app.js",
+    "dev": "cross-env NODE_ENV=development nodemon ./app.js"
+  },
+  "dependencies": {
+    "cross-env": "5.2.0",
+    "express": "4.16.4",
+    "socket.io": "^2.0.4",
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "1.18.10"
+  }
+}
